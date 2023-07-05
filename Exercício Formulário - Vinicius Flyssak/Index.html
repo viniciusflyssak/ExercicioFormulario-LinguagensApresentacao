@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="w-50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>FORMULÁRIO 1</title>
+  </head>
+  <header class="flex flex_row w-100">
+    <h4 class="left w-20">Faça seu cadastro</h2>
+    <h4 class="right w-80">Campos marcados com (*) são de prenchimento obrigatório</h2>
+  </header>
+  <body>
+    <form action="">
+      <div>
+        <div class="flex flex_row">
+          <h3 class="mr-1 fundo_item">1</h3>
+          <h2>Login</h2>
+        </div>
+        <div class="flex flex_row">
+          <label class="w-20" for="">Nome*</label>
+          <input class="w-80" type="text" />
+        </div>
+        <div class="flex flex_row">
+          <label class="w-20" for="">Email*</label>
+          <input class="w-80" type="email" required/>
+        </div>
+        <div class="flex flex_row">
+          <label class="w-20" for="">Senha*</label>
+          <input class="w-80" type="password" />
+        </div>
+        <div class="flex flex_row">
+          <label class="w-20" for="">Data de Nascimento*</label>
+          <input class="w-80" type="date" />
+        </div>
+        <div class="flex flex_row">
+          <label for="">Declaro que sou</label>
+          <div class="flex flex_row">
+            <div class="flex flex_row">
+              <input class="w-20 mr-1"
+                type="radio"
+                name="tipo"
+                id="menor"
+                placeholder="0"
+                value="menor"
+              />
+              <label class="w-80" for="">menor que 18 anos</label>
+            </div>
+            <div class="flex flex_row">
+              <input class="w-20 mr-1"
+                type="radio"
+                name="tipo"
+                id="maior"
+                placeholder="0"
+                value="maior"
+              />
+              <label class="w-80" for="">maior que 18 anos</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex_row">
+          <h3 class="mr-1 fundo_item">2</h3>
+          <h2>Biografia</h2>
+        </div>
+        <div class="flex flex_row mb-1">
+            <textarea name="msg" id="msg" cols="30" rows="8" class="w-100" title="msg"></textarea>
+        </div>
+      </div>
+      <div>
+        <div class="flex flex_row">
+          <h3 class="mr-1 fundo_item">3</h3>
+          <h2>Dados profissionais</h2>
+        </div>
+        <h4>Interesses</h6>      
+        <select class="w-100">
+          <option value="FRONT">Desenvolvedor front-end</option>
+          <option value="BACK">Desenvolvedor back-end</option>
+          <option value="FULL">Desenvolvedor full stack</option>
+        </select>
+      </div>
+
+      <div>
+        <div class="flex flex_row">
+          <h3 class="mr-1 fundo_item">4</h3>
+          <h2>Envie seu curriculum vitae</h2>
+        </div>
+        <input class="w-80" type="file">
+      </div>
+      <div>
+        <input type="checkbox" title="Desejo receber vagas por email">
+        <label for="">Desejo receber vagas por email</label>
+      </div>
+    </form>
+  </body>
+  <footer>     
+    <input class="w-100" type="submit" value="Enviar"></input>    
+  </footer>
+</html>
